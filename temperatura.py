@@ -21,7 +21,7 @@ legibilidad de codigo
 adjuntar el enlace de su repositorio en github
 """
 
-temperatura = float(input("Introduzca la temperatura: "))
+temperatura = float(input("Introduzca la temperatura: \n"))
 
 if temperatura > 35 :
     print("Ta juerte la calor")
