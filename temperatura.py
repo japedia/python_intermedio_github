@@ -20,6 +20,7 @@ legibilidad de codigo
 -----------------------------------------
 adjuntar el enlace de su repositorio en github
 """
+#ejecutandose en otra PC
 
 temperatura = float(input("Introduzca la temperatura: \n"))
 
