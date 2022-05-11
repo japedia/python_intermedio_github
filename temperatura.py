@@ -21,9 +21,9 @@ legibilidad de codigo
 adjuntar el enlace de su repositorio en github
 """
 
-temperatura = int(input("Introduzca la temperatura: "))
+temperatura = float(input("Introduzca la temperatura: "))
 
-if temperatura >= 35 :
+if temperatura > 35 :
     print("Ta juerte la calor")
 
 elif temperatura in range(25,30) :
@@ -31,5 +31,6 @@ elif temperatura in range(25,30) :
 
 elif temperatura < 25 :
     print("es hora de sacar el sueter cucarachiento")
+
 else:
     print("valor no considerado")
