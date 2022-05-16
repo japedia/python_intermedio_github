@@ -23,5 +23,5 @@ from carpetas import borrar_carpeta
 
 #crear_carpetas("folder_prueba",5)
 
-borrar_carpeta("folder_prueba",2)
+borrar_carpeta("folder_prueba",5)
 

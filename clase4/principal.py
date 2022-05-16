@@ -1,5 +1,10 @@
-import random
+# crear una funcion que borre N numero de carpetas
+# https://docs.python.org/es/3.10/library/os.html#files-and-directories
+# os.rmdir()
 
-numero_aleatorio = random.randint(1,10)
+from carpetas import crear_carpetas
+from carpetas import borrar_carpeta
 
-print(numero_aleatorio)
+crear_carpetas("folder_prueba",5)
+
+#borrar_carpeta("folder_prueba",5)
