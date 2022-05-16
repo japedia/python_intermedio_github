@@ -12,11 +12,17 @@ def crear_carpetas (sufijo, cantidad):
         print(f"Creando carpeta {sufijo}{i}")
 
 
-def borrar_carpeta(ruta):
+def borrar_carpeta(nombre_archivo,cantidad):
     
-    if os.path.isdir(ruta):
+    for i in range(cantidad):
+        
+        micarpeta = nombre_archivo + str(i)
 
-        os.rmdir(ruta)  # Borra carpeta vacia
+        print(micarpeta)
+        
+        if os.path.isdir(micarpeta):
+
+            os.rmdir(micarpeta)  # Borra carpeta vacia
     
     #else:
     #   raise ValueError("file {} is not a file or dir.".format(ruta))
