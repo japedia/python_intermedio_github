@@ -18,3 +18,10 @@
 #from saludos_sarai  import saludos as saludo2
 #saludo1
 
+from carpetas import crear_carpetas
+from carpetas import borrar_carpeta
+
+#crear_carpetas("folder_prueba ",4)
+
+borrar_carpeta("folder_prueba 3")
+
