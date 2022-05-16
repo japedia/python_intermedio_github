@@ -18,11 +18,6 @@ def borrar_carpeta(nombre_archivo,cantidad):
         
         micarpeta = nombre_archivo + str(i)
 
-        print(micarpeta)
-        
         if os.path.isdir(micarpeta):
 
             os.rmdir(micarpeta)  # Borra carpeta vacia
-    
-    #else:
-    #   raise ValueError("file {} is not a file or dir.".format(ruta))
