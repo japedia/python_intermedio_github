@@ -1,0 +1,4 @@
+Nucleos del CPU : 8
+Frecuencia del CPU : scpufreq(current=3600.0, min=0.0, max=3600.0)
+Memoria Virtual : svmem(total=6381559808, available=1604947968, percent=74.9, used=4776611840, free=1604947968)
+Uso del Disco Duro : sdiskusage(total=239386107904, used=208689573888, free=30696534016, percent=87.2)
