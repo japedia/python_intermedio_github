@@ -15,15 +15,16 @@ for archivo in contenido :
 """
 salir = False
 i=1
+folder = "Fotos"
 
 while not salir :
     
     try:
-        os.mkdir("Fotos")
+        os.mkdir(folder)
         print("se creo la carpeta")
         
     except FileExistsError as ex:
-        os.mkdir("Fotos("+str(i)+")")
+        os.mkdir(f"{folder}+"("+str(i)+")")
         i+=1
             
     
