@@ -7,14 +7,14 @@
 
 import os
 
-contenido = os.listdir('C:\\python_intermedio_github')
-for archivo in contenido :
-    print(archivo)
+#contenido = os.listdir('C:\\python_intermedio_github')
+#for archivo in contenido :
+#    print(archivo)
 
 #C:\python_intermedio_github
-"""
+
 salir = False
-i=1
+i=0
 folder = "Fotos"
 
 while not salir :
@@ -22,14 +22,18 @@ while not salir :
     try:
         os.mkdir(folder)
         print("se creo la carpeta")
+        i+=1
+        print(i)
         
     except FileExistsError as ex:
-        os.mkdir(f"{folder}+"("+str(i)+")")
+        #folder = folder+"("+str(i)+")"
+        os.mkdir(f'{folder}({i})')
         i+=1
+        print(i)
             
     
     opcion = input("Crear mas copias? (s/n): ")
     
     if opcion=="n" :
         salir = True
-"""
+
