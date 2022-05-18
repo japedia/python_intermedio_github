@@ -7,32 +7,28 @@
 
 import os
 
-#contenido = os.listdir('C:\\Users\\Admin\\Documents\\GitHub\\python_intermedio_github')
+contenido = os.listdir('C:\\python_intermedio_github')
+for archivo in contenido :
+    print(archivo)
 
-#print(contenido)
+#C:\python_intermedio_github
+"""
+salir = False
+i=1
 
-repetida = False
-while not repetida :
-    i=1
+while not salir :
+    
     try:
         os.mkdir("Fotos")
         print("se creo la carpeta")
-        break
+        
     except FileExistsError as ex:
-        os.mkdir("carpeta_prueba"{i})
-
-
-def crear_carpetas(nombre_de_la_carpeta, consecutivo = 0):
-    try:
-        if consecutivo < 1:
-            os.mkdir(nombre_de_la_carpeta)
-        else:
-            os.mkdir(nombre_de_la_carpeta + f'({consecutivo})')
-
-    except FileExistsError as ex:
-        crear_carpetas(nombre_de_la_carpeta, consecutivo + 1)
-
-
-crear_carpetas("funcion_recursiva")
-
+        os.mkdir("Fotos("+str(i)+")")
+        i+=1
+            
     
+    opcion = input("Crear mas copias? (s/n): ")
+    
+    if opcion=="n" :
+        salir = True
+"""
