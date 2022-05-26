@@ -5,3 +5,4 @@ https://www.psycopg.org/docs/usage.html
 https://www.psycopg.org/docs/cursor.html
 https://pypi.org/project/psycopg2/
 https://www.mockaroo.com/
+https://www.sqlalchemy.org/
