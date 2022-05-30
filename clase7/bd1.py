@@ -3,7 +3,8 @@
 
 import psycopg2
 
-conn = psycopg2.connect("dbname=python_intermedio user=postgres password=12345")
+conn = psycopg2.connect("dbname=dbpython_intermedio user=postgres password=12345")
+print("conectado")
 cur=conn.cursor()
 
 cur.execute("SELECT * FROM usuarios WHERE id=50;")
