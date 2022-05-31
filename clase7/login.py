@@ -10,7 +10,7 @@ print(
 | Por favor..............             |
 +==================================+
 """)
-conn = psycopg2.connect("dbname=dbpython_intermedio user=postgres password=12345")
+conn = psycopg2.connect("dbname=python_intermedio user=postgres password=12345")
 
 user = input("usuario = ")
 password = input("contraseña = ")
@@ -20,32 +20,28 @@ cur=conn.cursor()
 
 consulta = f"SELECT username, password FROM usuarios WHERE username=\'{user}\';"
 
-if cur.execute(consulta):
+print(consulta)
 
-    usuario_pwd = cur.fetchone()
+cur.execute(consulta)
 
-    print(usuario_pwd)
-else:
-    usuario_pwd = ""
+usuario_pwd = cur.fetchone()
 
-# Usuario de prueba: apydcock0
-#Password de prueba: N9RyghmCZIA
+# Usuario de prueba: achristophe0
+#Password de prueba: jHB27PBh0f
 
 print(usuario_pwd)
 
-if usuario_pwd != "":
+if user == usuario_pwd[0] and password == usuario_pwd[1]:
 
-    if user == usuario_pwd[0] and password == usuario_pwd[1]:
+    print(f"Bienvenido {usuario_pwd[0]}")
 
-        print(f"Bienvenido {usuario_pwd[0]}")
+else:
 
-    else:
+    print("Usuario o contraseña incorrectos por favor intenta de nuevo")
 
-        print("Usuario o contraseña incorrectos por favor intenta de nuevo")
+    user = input("usuario = ")
 
-        user = input("usuario = ")
-
-        password = input("contraseña = ")
+    password = input("contraseña = ")
 
 cur.close
 conn.close

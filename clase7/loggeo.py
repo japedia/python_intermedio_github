@@ -16,7 +16,7 @@ print(
 | contraseña por favor             |
 +==================================+
 """)
-conn = psycopg2.connect("dbname=dbpython_intermedio user=postgres password=12345")
+conn = psycopg2.connect("name=dbpython_intermedio user=postgres password=12345")
 
 user = input("usuario = ")
 password = input("contraseña = ")
