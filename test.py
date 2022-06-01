@@ -1,4 +1,4 @@
-from clase8.auth.register import register_user
+from clase8.auth.register import agregar_usuario
 import os
 os.system('cls')
 
@@ -9,4 +9,4 @@ correo = input("Correo electrónico: ")
 
 
 # al registrarse retorne si se pudo o no registrar el usario
-register_user(usuario,contraseña,correo)
+agregar_usuario(usuario,contraseña,correo)
