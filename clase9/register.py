@@ -1,4 +1,4 @@
-from .connection import get_connection
+from ..clase8.auth.connection import get_connection
 
 def agregar_usuario(usuario, contraseña,correoe):
     conn, cur = get_connection()

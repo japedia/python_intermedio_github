@@ -1,4 +1,4 @@
-from clase8.auth.register import agregar_usuario
+from clase9.register import agregar_usuario
 import os
 os.system('cls')
 

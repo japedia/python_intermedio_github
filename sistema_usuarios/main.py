@@ -28,7 +28,7 @@ def menu1():
 	print ("\t1 - Ingresar")
 	print ("\t2 - Registrar Usuario")
 	print ("\t3 - Salir")
-    print ("\t4 - otra opcion")
+	print ("\t4 - otra opcion")
 
 seleccion = False
 
@@ -51,4 +51,4 @@ while not seleccion:
 		break
 	else:
 		print ("FALLÓ TODO")
-		input("No has pulsado ninguna opción correcta...\npulsa una tecla para continuar")
+		input("No has pulsado ninguna opción correcta...\npulsa una tecla para continuar")      
